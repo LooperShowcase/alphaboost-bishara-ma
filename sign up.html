@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="stayl.css" />
+  </head>
+  <body>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="shoes.html">Shoes</a></li>
+      <li><a href="Tshirt.html">Tshirt</a></li>
+      <li><a href="pants.html">Pants</a></li>
+      <li><a class="active" href="sign up.html">sign up</a></li>
+      <li id="float">
+        <input id="colorpicker" type="color" onchange="colorchange()" />
+
+      </li>
+    </li>
+    <li id="float">
+      <img id="myprof"
+        src="https://www.pngkey.com/png/full/73-730477_first-name-profile-image-placeholder-png.png"
+        width="50"
+      />
+    </li>
+    </ul>
+
+    <center>
+      <form>
+        <label>Email:</label>
+        <input type="Email" />
+
+        <br />
+        <label> password :</label>
+        <input type="password" />
+      </br>
+        <input id="imagepicker" type="file" onchange="profilechange()" />
+      </form>
+     
+     
+    </center>
+
+    <script>
+      function colorchange() {
+        var newcolor = document.getElementById("colorpicker").value;
+        document.body.style.background = newcolor;
+      }
+
+function profilechange(){
+  var newimage = document.getElementById("imagepicker").files[0].name;
+  document.getElementById("myprof").src=newimage;
+}
+
+    </script>
+  </body>
+</html>

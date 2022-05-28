@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>shoes</title>
+    <link rel="stylesheet" href="stayl.css" />
+  </head>
+  <body>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="shoes.html">Shoes</a></li>
+      <li><a href="#Tshirt">Tshirt</a></li>
+      <li><a href="#pants">Pants</a></li>
+      <li id="float"><input id="colorpicker" type="color" onchange="colorchange()" /></li>
+    </ul>
+
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQREsTdT9qyi9p4R3s5P8Qzus1Vh4qjn-6VYiM5UWNtIcgea2ReD-7LPWehzsNs9B_d28k&usqp=CAU"
+    />
+    <script>
+      function colorchange() {
+        var newcolor = document.getElementById("colorpicker").value;
+        document.body.style.background = newcolor;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="stayl.css" />
+  </head>
+  <body>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="shoes.html">Shoes</a></li>
+      <li><a href="Tshirt.html">Tshirt</a></li>
+      <li><a href="#pants">Pants</a></li>
+      <li id="float"><input id="colorpicker" type="color" onchange="colorchange()" /></li>
+    </ul>
+    <img
+      src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/61e8cccd-5be2-48c5-9357-1fff3877ea90/dri-fit-swoosh-training-t-shirt-tFzWW3.png"
+      width="20%"
+    />
+
+    <script>
+      function colorchange() {
+        var newcolor = document.getElementById("colorpicker").value;
+        document.body.style.background = newcolor;
+      }
+    </script>
+  </body>
+</html>

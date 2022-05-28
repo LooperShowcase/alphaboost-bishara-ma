@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Nike</title>
+    <link rel="stylesheet" href="stayl.css" />
+  </head>
+  <body>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="shoes.html">Shoes</a></li>
+      <li><a href="Tshirt.html">Tshirt</a></li>
+      <li><a href="pants.html">Pants</a></li>
+      <li><a href="sign up.html">sign up</a></li>
+      <li id="float">
+        <input id="colorpicker" type="color" onchange="colorchange()" />
+      </li>
+      <li id="float">
+        <img
+          src="https://www.pngkey.com/png/full/73-730477_first-name-profile-image-placeholder-png.png"
+          width="40"
+        />
+      </li>
+    </ul>
+    <center>
+      <h1>Nike</h1>
+    </center>
+
+    <img
+      src="https://c.static-nike.com/a/images/w_1920,c_limit/bzl2wmsfh7kgdkufrrjq/image.jpg"
+      width="20%"
+    />
+    <img
+      src="https://data.nssmag.com/images/galleries/23805/Senza-titolo-3(6).jpg"
+      width="18%"
+    />
+    <img
+      src="https://images.complex.com/complex/images/c_fill,dpr_auto,f_auto,q_90,w_1400/fl_lossy,pg_1/gtdsomrfke5tckpj1jtr/nike-logos-lead"
+      width="20%"
+    />
+    <p>
+      with revenue in excess of US$37.4 billion in its fiscal year 2020 (ending
+      May 31, 2020).[4] As of 2020, it employed 76,700 people worldwide.[5] In
+      2020 the brand alone was valued in excess of $32 billion, making it the
+      most valuable brand among sports businesses.
+    </p>
+
+    <p>
+      The company was founded on January 25, 1964, as "Blue Ribbon Sports", by
+      Bill Bowerman and Phil Knight, and officially became Nike, Inc. on May 30,
+      1971. The company takes its name from Nike, the Greek goddess of victory.
+    </p>
+
+    <iframe
+      width="600"
+      height="500"
+      src="https://www.youtube.com/embed/dA7NgEvwm98?autoplay=1&mute=1"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+
+    <script>
+      function colorchange() {
+        var newcolor = document.getElementById("colorpicker").value;
+        document.body.style.background = newcolor;
+      }
+    </script>
+  </body>
+</html>
